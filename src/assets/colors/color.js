@@ -1,3 +1,5 @@
+import "../../index.css";
+
 export const primaryColor = getComputedStyle(
 	document.documentElement
 ).getPropertyValue("--primary-color");

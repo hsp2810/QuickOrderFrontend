@@ -9,21 +9,25 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/styles/navbar.css";
-import { secondaryBgColor } from "../../assets/colors/color";
+import { primaryColor, secondaryBgColor } from "../../assets/colors/color";
+import PrimaryButton from "./PrimaryButton";
 
 const Navbar = () => {
 	return (
 		<HStack
 			padding={"1rem"}
 			justifyContent={"space-around"}
-			bg={"secondaryBgColor"}
+			bg={secondaryBgColor}
 		>
 			<Box className='logo-container'>
-				<Heading
-					size={"lg"}
-					children={"QuickOrder"}
-					textTransform={"uppercase"}
-				/>
+				<Link to={"/"}>
+					<Heading
+						size={"lg"}
+						children={"QuickOrder"}
+						textTransform={"uppercase"}
+						color={primaryColor}
+					/>
+				</Link>
 			</Box>
 			<HStack>
 				<Box className='nav-items'>
@@ -38,10 +42,22 @@ const Navbar = () => {
 				</Box>
 			</HStack>
 			<ButtonGroup>
-				<Button colorScheme='orange'>Login</Button>
-				<Button variant={"outline"} colorScheme='orange'>
-					Register
-				</Button>
+				<Link to={"/login"}>
+					<PrimaryButton
+						color={"orange"}
+						variant={"solid"}
+						size={"sm"}
+						text={"login"}
+					/>
+				</Link>
+				<Link to={"/register"}>
+					<PrimaryButton
+						color={"orange"}
+						variant={"outline"}
+						size={"sm"}
+						text={"register"}
+					/>
+				</Link>
 			</ButtonGroup>
 		</HStack>
 	);
