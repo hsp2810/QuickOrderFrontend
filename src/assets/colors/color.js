@@ -7,3 +7,7 @@ export const primaryColor = getComputedStyle(
 export const secondaryBgColor = getComputedStyle(
 	document.documentElement
 ).getPropertyValue("--secondary-bg-color");
+
+export const tertiaryBgColor = getComputedStyle(
+	document.documentElement
+).getPropertyValue("--tertiary-bg-color");

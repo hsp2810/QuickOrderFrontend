@@ -23,6 +23,7 @@ const defRegister = {
 	username: "",
 	email: "",
 	password: "",
+	govID: "",
 };
 
 const Register = () => {
@@ -54,15 +55,15 @@ const Register = () => {
 };
 
 const RegisterPanel = ({ type }) => {
-	const [loginCred, setLoginCred] = useState(defRegister);
+	const [registerCred, setRegisterCred] = useState(defRegister);
 	const [show, setShow] = useState(false);
 	const handleClick = () => setShow(!show);
 
 	const handleChange = (e) => {
-		setLoginCred(e.target.value);
+		setRegisterCred(e.target.value);
 	};
 
-	const handleLogin = () => {};
+	const handleRegister = () => {};
 
 	return (
 		<VStack>
@@ -77,16 +78,38 @@ const RegisterPanel = ({ type }) => {
 						focusBorderColor={primaryColor}
 						mt={"1rem"}
 						onChange={handleChange}
-						value={loginCred.username}
+						value={registerCred.username}
 					/>
 					<Input
 						type='text'
-						placeholder='Email'
+						placeholder={
+							type === "business" ? "Work Email" : "Email"
+						}
 						focusBorderColor={primaryColor}
 						mt={"1rem"}
 						onChange={handleChange}
-						value={loginCred.email}
+						value={registerCred.email}
 					/>
+					<Input
+						type='tel'
+						placeholder={
+							type === "business" ? "Work Phone" : "Phone"
+						}
+						focusBorderColor={primaryColor}
+						mt={"1rem"}
+						onChange={handleChange}
+						value={registerCred.email}
+					/>
+					{type === "business" && (
+						<Input
+							type='text'
+							placeholder='Government Approved business ID'
+							focusBorderColor={primaryColor}
+							mt={"1rem"}
+							onChange={handleChange}
+							value={registerCred.govID}
+						/>
+					)}
 					<InputGroup>
 						<Input
 							type={show ? "text" : "password"}
@@ -94,7 +117,7 @@ const RegisterPanel = ({ type }) => {
 							focusBorderColor={primaryColor}
 							mt={"1rem"}
 							onChange={handleChange}
-							value={loginCred.password}
+							value={registerCred.password}
 						/>
 						<InputRightElement width='4.5rem' mt={"1rem"}>
 							<Button h='1.75rem' size='sm' onClick={handleClick}>

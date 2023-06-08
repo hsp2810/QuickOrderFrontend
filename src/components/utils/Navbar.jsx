@@ -40,6 +40,11 @@ const Navbar = () => {
 						<Link className='nav-links'>Contact the team</Link>
 					</Text>
 				</Box>
+
+				{/* If you are login into the application */}
+				{/* User login */}
+				{/* Favourites Restaurants */}
+				{/* Previous Orders */}
 			</HStack>
 			<ButtonGroup>
 				<Link to={"/login"}>

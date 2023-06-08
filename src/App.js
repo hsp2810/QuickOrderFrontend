@@ -6,6 +6,7 @@ import Footer from "./components/utils/Footer";
 import Login from "./components/auth/Login";
 import { Box } from "@chakra-ui/react";
 import Register from "./components/auth/Register";
+import RestaurantMenuPage from "./pages/RestaurantMenuPage";
 
 const App = () => {
 	return (
@@ -16,6 +17,10 @@ const App = () => {
 					<Route path='/' element={<Dashboard />} />
 					<Route path='/login' element={<Login />} />
 					<Route path='/register' element={<Register />} />
+					<Route
+						path='/restaurants/:id/menu'
+						element={<RestaurantMenuPage />}
+					/>
 				</Routes>
 			</Box>
 			<Footer />

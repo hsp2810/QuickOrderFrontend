@@ -17,8 +17,10 @@ import { primaryColor } from "../../assets/colors/color";
 import PrimaryButton from "../utils/PrimaryButton";
 import { calcClosingTime } from "../../assets/calculations/resTime";
 import CustomBadge from "../utils/CustomBadge";
+import { Link } from "react-router-dom";
 
 const RestaurantCard = ({
+	id,
 	name,
 	status,
 	description,
@@ -94,12 +96,14 @@ const RestaurantCard = ({
 			<Divider />
 			<CardFooter>
 				<ButtonGroup spacing={2}>
-					<PrimaryButton
-						text={"View menu"}
-						color={"orange"}
-						size={"xs"}
-						variant={"solid"}
-					/>
+					<Link to={`/restaurants/${id}/menu`}>
+						<PrimaryButton
+							text={"View menu"}
+							color={"orange"}
+							size={"xs"}
+							variant={"solid"}
+						/>
+					</Link>
 					<PrimaryButton
 						text={"add to favourites"}
 						color={"orange"}

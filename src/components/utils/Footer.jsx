@@ -4,7 +4,7 @@ import { secondaryBgColor } from "../../assets/colors/color";
 
 const Footer = () => {
 	return (
-		<HStack bg={secondaryBgColor} padding={"1rem"} mt={"5rem"}>
+		<HStack bg={secondaryBgColor} padding={"1rem"}>
 			<Heading size={"sm"}>
 				© 2023 QuickOrder. All rights reserved.
 			</Heading>

@@ -15,6 +15,7 @@ const ExploreResturants = () => {
 						return (
 							<GridItem key={index}>
 								<RestaurantCard
+									id={res.id}
 									name={res.name}
 									description={res.description}
 									categories={res.categories}

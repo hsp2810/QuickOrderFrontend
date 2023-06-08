@@ -1,5 +1,6 @@
 export const restaurants = [
 	{
+		id: 1,
 		name: "LaJawaab",
 		status: "open",
 		description:
@@ -9,8 +10,10 @@ export const restaurants = [
 		address: "5075 Falconridge Blvd NE #900, Calgary, AB T3J 3K9",
 		opensAt: "10:00",
 		closesAt: "22:00",
+		rating: 9,
 	},
 	{
+		id: 2,
 		name: "Bharat ka Khana",
 		status: "open",
 		description:
@@ -20,8 +23,10 @@ export const restaurants = [
 		address: "5075 Falconridge Blvd NE #900, Calgary, AB T3J 3K9",
 		opensAt: "10:00",
 		closesAt: "22:00",
+		rating: 9,
 	},
 	{
+		id: 3,
 		name: "Indian Masala",
 		status: "open",
 		description:
@@ -31,8 +36,10 @@ export const restaurants = [
 		address: "5075 Falconridge Blvd NE #900, Calgary, AB T3J 3K9",
 		opensAt: "10:00",
 		closesAt: "16:00",
+		rating: 9,
 	},
 	{
+		id: 4,
 		name: "Fleur de Sel Brasserie",
 		status: "open",
 		description:
@@ -42,8 +49,10 @@ export const restaurants = [
 		address: "2505 17 Ave SW #105, Calgary, AB T3C 1J7",
 		opensAt: "10:00",
 		closesAt: "22:00",
+		rating: 9,
 	},
 	{
+		id: 5,
 		name: "LaJawaab",
 		status: "open",
 		description:
@@ -53,5 +62,6 @@ export const restaurants = [
 		address: "5075 Falconridge Blvd NE #900, Calgary, AB T3J 3K9",
 		opensAt: "10:00",
 		closesAt: "22:00",
+		rating: 9,
 	},
 ];
