@@ -48,13 +48,15 @@ const RestaurantMenuPage = () => {
 			/>
 
 			{/* Menu */}
-			<VStack mt={showResInfoNav ? "17rem" : "4rem"}>
-				<HStack alignItems={"flex-start"} flex={100}>
-					<RestaurantMenuSidebar />
-					<RestaurantMenuContent />
-					<Cart />
-				</HStack>
-			</VStack>
+			<HStack
+				alignItems={"flex-start"}
+				flex={100}
+				mt={showResInfoNav ? "17rem" : "4rem"}
+			>
+				<RestaurantMenuSidebar />
+				<RestaurantMenuContent />
+				<Cart />
+			</HStack>
 		</Flex>
 	);
 };
