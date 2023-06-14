@@ -16,8 +16,8 @@ const RestaurantMenuContentItem = ({ name, description }) => {
 		<Card
 			direction={{ base: "column", sm: "row" }}
 			overflow='hidden'
-			size={"sm"}
-			variant='outline'
+			size={"md"}
+			variant='filled'
 			borderRadius={"2rem !important"}
 		>
 			<Image

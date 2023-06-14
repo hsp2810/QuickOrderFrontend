@@ -6,9 +6,10 @@ import RestaurantMenuContentItem from "./RestaurantMenuContentItem";
 const RestaurantMenuContent = () => {
 	return (
 		<VStack
-			flex={65}
+			flex={60}
 			alignItems={"flex-start"}
-			height={"60vh"}
+			height={"70vh"}
+			ml={"1rem"}
 			overflowY={"scroll"}
 		>
 			<MenuCategoryItem

@@ -15,31 +15,30 @@ import { Link } from "react-router-dom";
 const RestaurantMenuSidebar = () => {
 	return (
 		<VStack
-			p={"3rem"}
 			bg={tertiaryBgColor}
 			height={"70vh"}
 			alignItems={"center"}
 			borderRadius={"2rem"}
-			flex={10}
+			flex={15}
 		>
-			<Heading fontSize={"lg"}>Categories</Heading>
-			<VStack p={"1rem"} alignItems={"flex-end"}>
+			<Heading fontSize={"lg"} mt={"2rem"}>
+				Categories
+			</Heading>
+			<VStack mt={"2rem"} alignItems={"center"} w={"100%"}>
 				<Heading
-					mt={"1rem"}
 					fontSize={"md"}
-					p={"1rem"}
 					borderRadius={"2rem"}
-					w={"100%"}
+					w={"80%"}
 					textAlign={"center"}
 				>
-					<Link className='menu-item-link'>Veg</Link>
+					<Link className='menu-item-link' to={"#veg"}>
+						Veg
+					</Link>
 				</Heading>
 				<Heading
-					mt={"1rem"}
 					fontSize={"md"}
-					p={"1rem"}
 					borderRadius={"2rem"}
-					w={"100%"}
+					w={"80%"}
 					textAlign={"center"}
 				>
 					<Link to={"#nonVeg"} className='menu-item-link'>
@@ -47,11 +46,9 @@ const RestaurantMenuSidebar = () => {
 					</Link>
 				</Heading>
 				<Heading
-					mt={"1rem"}
 					fontSize={"md"}
-					p={"1rem"}
 					borderRadius={"2rem"}
-					w={"100%"}
+					w={"80%"}
 					textAlign={"center"}
 				>
 					<Link className='menu-item-link'>Vegan</Link>

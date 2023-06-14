@@ -22,4 +22,19 @@
 
 .menu-item-link {
 	scroll-behavior: smooth;
+	display: block;
+	padding: 1rem;
+	width: 100%;
+	border-radius: 2rem;
 }
+
+.menu-item-link:hover {
+	color: #fff;
+	background-color: #000;
+	transition: 0.3s ease-in-out;
+}
+
+/* .menu-item-link:visited {
+	color: #fff;
+	background-color: #000;
+} */
